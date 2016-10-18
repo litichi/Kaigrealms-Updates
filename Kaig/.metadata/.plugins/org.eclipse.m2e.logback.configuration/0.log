@@ -1,0 +1,29 @@
+2016-10-17 23:00:01,888 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: net.ddns.Kaigrealms:Kaigrealms:0.0.1-SNAPSHOT @ C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\pom.xml.
+2016-10-17 23:00:05,052 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Kaigrealms/src/main/java
+2016-10-17 23:00:05,052 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Kaigrealms/src/test/java
+2016-10-17 23:00:05,256 [Worker-3] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 10 sec
+2016-10-17 23:00:07,209 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: net.ddns.Kaigrealms:Kaigrealms:0.0.1-SNAPSHOT @ C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\pom.xml.
+2016-10-17 23:00:08,759 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:00:08,775 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\main\resources
+2016-10-17 23:00:08,775 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:00:08,775 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\test\resources
+2016-10-17 23:00:10,294 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:00:10,325 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\main\resources
+2016-10-17 23:00:10,341 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:00:10,341 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\test\resources
+2016-10-17 23:02:19,830 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:02:19,830 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\main\resources
+2016-10-17 23:02:19,846 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:02:19,846 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\test\resources
+2016-10-17 23:05:01,147 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig
+2016-10-17 23:05:01,147 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B generate-sources
+2016-10-17 23:05:15,363 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig
+2016-10-17 23:05:15,363 [Worker-5] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2016-10-17 23:05:36,419 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:05:36,435 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\main\resources
+2016-10-17 23:05:36,435 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:05:36,450 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\test\resources
+2016-10-17 23:06:01,669 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:06:01,669 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\main\resources
+2016-10-17 23:06:01,685 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-17 23:06:01,701 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\laer\Documents\GitHub\Kaigrealms\Plugins\Kaig\src\test\resources
