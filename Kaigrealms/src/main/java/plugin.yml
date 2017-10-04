@@ -1,5 +1,5 @@
 name: Kaigrealms
-version: 0.3.3
+version: 0.3.8
 main: net.ddns.Kaigrealms.Kaigrealms
 commands:
   spawn:

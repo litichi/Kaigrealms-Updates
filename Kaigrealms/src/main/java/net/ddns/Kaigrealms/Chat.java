@@ -5,6 +5,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
 public class Chat {
+	// What do you expect on a server where the owner has a pufferfish skin?
 	@EventHandler
 	public void onPlayerChat(AsyncPlayerChatEvent evnt){
 		if (evnt.getMessage().toLowerCase().contains("fishy")){

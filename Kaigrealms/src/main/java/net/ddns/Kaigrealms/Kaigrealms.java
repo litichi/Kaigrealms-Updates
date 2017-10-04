@@ -14,6 +14,7 @@ public class Kaigrealms extends JavaPlugin implements Listener {
 	public File folder = this.getDataFolder();
 	public File file = new File("homes.yml");
 	static YamlConfiguration homes = new YamlConfiguration();
+	@Override
 	public void onEnable(){
 		Bukkit.getPluginManager().registerEvents(this, this);
         System.out.print("[Kaigrealms] Kaig Enabled!");
@@ -38,6 +39,7 @@ public class Kaigrealms extends JavaPlugin implements Listener {
 			}
         reloadConfig();
 	}
+	@Override
 	public void reloadConfig(){
         this.getConfig().options().copyDefaults(true);
 		this.saveConfig();
