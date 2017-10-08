@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.ddns.Kaigrealms</groupId>
   <artifactId>Kaigrealms</artifactId>
-  <version>0.3.8</version>
+  <version>0.3.9</version>
   <repositories>
  		<repository>
    		<id>spigot-repo</id>

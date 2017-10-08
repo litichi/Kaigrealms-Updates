@@ -25,6 +25,17 @@ public class Kaig extends JavaPlugin implements Listener{
 		}
 	}
 	static ArrayList<ArrayList<String>> list = new ArrayList<ArrayList<String>>();
+	static String tpAns(int ans, Player sender) {
+		switch(ans) {
+		case 1:
+			return Methods.name(sender)+" wants to teleport to you";
+		case 2:
+			return "Use /tpyes "+Methods.name(sender)+" to accept the request, or";
+		case 3:
+			return "Use /tpno "+Methods.name(sender)+" to deny the request.";
+		}
+		return null;
+	}
 		static void tpRequest(Player sender, Player sent, String which){
 			for (int v = 1; v<list.size(); v++){
 				if (list.get(v).get(0) == Methods.id(sender)
@@ -41,13 +52,13 @@ public class Kaig extends JavaPlugin implements Listener{
 			}
 			Methods.message(sender, "Request sent.");
 			if (which == "tpt"){
-				Methods.message(sent, Methods.name(sender)+" wants to teleport to you");
-				Methods.message(sent, "Use /tpyes "+Methods.name(sender)+" to accept the request, or");
-				Methods.message(sent, "use /tpno "+Methods.name(sender)+" to deny the request");
+				Methods.message(sent, tpAns(1, sender));
+				Methods.message(sent, tpAns(2, sender));
+				Methods.message(sent, tpAns(3, sender));
 			} else if(which == "tph"){
-				Methods.message(sent, Methods.name(sender)+" wants you to teleport to them");
-				Methods.message(sent, "Use /tpyes "+Methods.name(sender)+" to accept the request, or");
-				Methods.message(sent, "use /tpno "+Methods.name(sender)+" to deny the request");
+				Methods.message(sent, tpAns(1, sender));
+				Methods.message(sent, tpAns(2, sender));
+				Methods.message(sent, tpAns(3, sender));
 			}
 		}
 		static void tpResponse(Player sent, Player sender, boolean which){
