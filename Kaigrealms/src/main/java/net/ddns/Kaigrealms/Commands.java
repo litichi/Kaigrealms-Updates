@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 public class Commands {
 	public boolean onCommand(CommandSender usr, Command cmd, String label, String[] args){
 		if((usr instanceof Player)){
+			// This is still mostly a mess.
 			Player plyr = (Player) usr;
 			if(!(plyr.isDead())){
 				if (args.length==0){
@@ -25,9 +26,13 @@ public class Commands {
 							Methods.message(plyr,", you have successfully set the spawn of this world.");
 							return true;
 						} else {
-							Methods.message(plyr,", currently you have to be an operator to do this.");
-							return false;
+							Methods.message(plyr, "No perms.");
+							return true;
 						}
+					} else if(Methods.commander(cmd,  "getaway")) {
+						double r = plyr.getWorld().getWorldBorder().getSize()%2;
+						System.out.println(r);
+						plyr.teleport(new Location(plyr.getWorld(), Math.random()*r, Math.random()*r, Math.random()*r));
 					}
 				} else if(args.length==1){
 					if(Methods.commander(cmd, "tpt")){
@@ -58,11 +63,4 @@ public class Commands {
 		}
 		return false;
 	}
-	/*
-	 * warps useable by all, cross worlds as well
-	 * random tp system?
-	 * permissions system.. like silencing and freezing, in new class
-	 * tags for usernames in Chat.java
-	 */
-	//diguises as mobs eventually [likely later than sooner]
 }

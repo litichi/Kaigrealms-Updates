@@ -36,7 +36,17 @@ public class Methods {
 			return false;
 		}
 	}
-
+	static String tpAns(int ans, Player sender) {
+		switch(ans) {
+		case 1:
+			return Methods.name(sender)+" wants to teleport to you";
+		case 2:
+			return "Use /tpyes "+Methods.name(sender)+" to accept the request, or";
+		case 3:
+			return "Use /tpno "+Methods.name(sender)+" to deny the request.";
+		}
+		return null;
+	}
 	// list used for storage of teleport requests
 	static ArrayList<ArrayList<String>> list = new ArrayList<ArrayList<String>>();
 	/* methods handling teleportation either way, possibly make more simple in the future
@@ -89,7 +99,7 @@ public class Methods {
 			message(send, "That player doesn't exist or is offline");
 		}
 	}
-	
+	// This doesn't actually function yet.
 	static void homes(Player  plyr, String name, int command, Location place, YamlConfiguration c){
 		String d = "server."+id(plyr)+"."+name;
 		switch (command){

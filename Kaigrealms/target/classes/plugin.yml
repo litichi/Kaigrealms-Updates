@@ -1,12 +1,12 @@
 name: Kaigrealms
-version: 0.3.9
+version: 0.4.0
 main: net.ddns.Kaigrealms.Kaigrealms
 commands:
   spawn:
     description: Teleports the player to spawn
     usage: /spawn
-    permission: Kaig.spawn
-    permission-message: You can't go to spawn
+    permissions: Kaigrealms.default
+    permission-message: You're borked.
   setspawn:
     description: Sets the spawn of the current world
     usage: /setspawn
@@ -15,28 +15,33 @@ commands:
   suicide:
     description: Kills the player
     usage: /suicide
-    permission: Kaig.suicide
-    permission-message: You aren't allowed to kill yourself. Should be default, right?
+    permissions: Kaigrealms.default
+    permission-message: You're borked.
   tpt:
     description: Sends a request to teleport to another player
     usage: /tpt playername
-    permission: Kaig.tp
-    permission-message: You aren't allowed to teleport to someone
+    permissions: Kaigrealms.default
+    permission-message: You're borked.
   tph:
     description: Sends a request to another player to teleport to the sender
     usage: /tph playername
-    permission: Kaig.tp
-    permission-message: You aren't allowed to teleport someone to you
+    permissions: Kaigrealms.default
+    permission-message: You're borked.
   tpyes:
     description: Accepts a teleport request from a player
     usage: /tpyes playername
-    permission: Kaig.tp
-    permission-message: You aren't allowed to teleport
+    permissions: Kaigrealms.default
+    permission-message: You're borked.
   tpno:
     description: Declines a teleport request from a player
     usage: /tpno playername
-    permission: Kaig.tp
-    permission-message: You aren't allowed to teleport
+    permissions: Kaigrealms.default
+    permission-message: You're borked.
+  getaway:
+    description: Takes a player away to a random spot in the world.
+    usage: /getaway
+    permissions: Kaigrealms.default
+    permission-message: You're borked.
   fly:
     description: Toggles flight on or off, regardless of gamemode
     usage: /fly
@@ -45,29 +50,15 @@ commands:
   sethome:
     description: Lets a player set a home at a point in that world
     usage: /sethome homename
-    permission: Kaig.homes
-    permission-message: You aren't allowed to set homes
   home:
     description: Lets a player teleport to their home in its world
     usage: /home homename
-    permission: Kaig.homes
-    permission-message: You aren't allowed to set homes
+    permissions: Kaigrealms.default
+    permission-message: You're borked.
 permissions:
-  Kaigrealms.spawn:
-    description: Lets a player teleport to spawn
+  Kaigrealms.default:
+    description: Default permissions of a player
     default: true
   Kaigrealms.setspawn:
     description: Lets a player set the world spawn
     default: op
-  Kaigrealms.suicide:
-    description: Lets a player kill themselves
-    default: true
-  Kaigrealms.tp:
-    description: Lets a player teleport
-    default: true
-  Kaigrealms.fly:
-    description: Lets a player fly
-    default: true
-  Kaigrealms.homes:
-    description: Lets a player set homes
-    default: true

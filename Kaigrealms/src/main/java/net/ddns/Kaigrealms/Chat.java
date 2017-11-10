@@ -13,4 +13,5 @@ public class Chat {
 			evnt.getPlayer().sendMessage("Eh? You think so?");
 		}
 	}
+	// Can begin implementation of regex/formatting in chat in version 0.4.8
 }

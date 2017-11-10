@@ -18,25 +18,26 @@ public class Kaigrealms extends JavaPlugin implements Listener {
 	public void onEnable(){
 		Bukkit.getPluginManager().registerEvents(this, this);
         System.out.print("[Kaigrealms] Kaig Enabled!");
+        // The yml file and folder creation already work
         if(!folder.exists()) {
-        	folder.mkdir();
-        }	 
-        if(!file.exists()) {
-        	file.mkdir();
+        	folder.mkdir();	 
+            if(!file.exists()) {
+            	file.mkdir();
+            	try {
+        			homes.load(file);
+        			System.out.println("Homes file loaded!");
+        		} catch (FileNotFoundException e) {
+        			// TODO Auto-generated catch block
+        			e.printStackTrace();
+        		} catch (IOException e) {
+        			// TODO Auto-generated catch block
+        			e.printStackTrace();
+        		} catch (InvalidConfigurationException e) {
+        			// TODO Auto-generated catch block
+        			e.printStackTrace();
+        		}
+            }
         }
-        	try {
-				homes.load(file);
-				System.out.println("Homes file loaded!");
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (InvalidConfigurationException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
         reloadConfig();
 	}
 	@Override
